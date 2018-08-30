@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="2dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:textSize="50dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:gravity="center_horizontal"
+                android:layout_alignParentBottom="true"
+                android:text="CROWD\nTRACKER"
+                android:textStyle="bold|italic"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:textSize="25dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:gravity="center_horizontal"
+                android:layout_alignParentBottom="true"
+                android:text="Get population density of nearby metro stations on real time basis. \n(accurate to 1 hr time frame)" />
+
+            <LinearLayout
+                android:id="@+id/current_place_ll"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginTop="100dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/current_place_book_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary"
+                    android:text="Find metro stations near me"
+                    android:textColor="@color/white">
+
+                </Button>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textSize="16dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:gravity="center_horizontal"
+                android:layout_alignParentBottom="true"
+                android:text="Developed By EazyDevelop \n\n Contact at eazydevelopblog@gmail.com to contribute."/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
